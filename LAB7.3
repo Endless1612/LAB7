@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class loop3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number : ");
+        int number = input.nextInt();
+        int start = 0;
+        int line = 0;
+
+        while (start < number) {
+            start++;
+            if (start % 5 == 0 || start % 7 == 0) {
+                line++;
+                System.out.print(start + " ");
+
+                if (line % 10 == 0) {
+                    System.out.println("");
+                }
+            }
+
+        }
+
+    }
+
+}
